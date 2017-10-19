@@ -1,0 +1,1171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E064921F994E70009069EA /* DLInterval_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E064881F994E70009069EA /* DLInterval_iOS.framework */; };
+		63E064971F994E70009069EA /* DLInterval_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064961F994E70009069EA /* DLInterval_iOSTests.swift */; };
+		63E064991F994E70009069EA /* DLInterval_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0648B1F994E70009069EA /* DLInterval_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E064AB1F994EDE009069EA /* DLInterval_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E064A91F994EDE009069EA /* DLInterval_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E064BD1F994F29009069EA /* DLInterval_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E064B41F994F29009069EA /* DLInterval_tvOS.framework */; };
+		63E064C21F994F29009069EA /* DLInterval_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064C11F994F29009069EA /* DLInterval_tvOSTests.swift */; };
+		63E064C41F994F29009069EA /* DLInterval_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E064B61F994F29009069EA /* DLInterval_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E064D91F994F6D009069EA /* DLInterval_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E064D01F994F6C009069EA /* DLInterval_macOS.framework */; };
+		63E064DE1F994F6D009069EA /* DLInterval_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064DD1F994F6D009069EA /* DLInterval_macOSTests.swift */; };
+		63E064E01F994F6D009069EA /* DLInterval_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E064D21F994F6C009069EA /* DLInterval_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E064ED1F994FEF009069EA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064E91F994FEF009069EA /* Interval.swift */; };
+		63E064EE1F994FEF009069EA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064E91F994FEF009069EA /* Interval.swift */; };
+		63E064EF1F994FEF009069EA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064E91F994FEF009069EA /* Interval.swift */; };
+		63E064F01F994FEF009069EA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064E91F994FEF009069EA /* Interval.swift */; };
+		63E064F11F994FEF009069EA /* IntervalBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EA1F994FEF009069EA /* IntervalBoundary.swift */; };
+		63E064F21F994FEF009069EA /* IntervalBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EA1F994FEF009069EA /* IntervalBoundary.swift */; };
+		63E064F31F994FEF009069EA /* IntervalBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EA1F994FEF009069EA /* IntervalBoundary.swift */; };
+		63E064F41F994FEF009069EA /* IntervalBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EA1F994FEF009069EA /* IntervalBoundary.swift */; };
+		63E064F51F994FEF009069EA /* IntervalOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EB1F994FEF009069EA /* IntervalOperators.swift */; };
+		63E064F61F994FEF009069EA /* IntervalOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EB1F994FEF009069EA /* IntervalOperators.swift */; };
+		63E064F71F994FEF009069EA /* IntervalOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EB1F994FEF009069EA /* IntervalOperators.swift */; };
+		63E064F81F994FEF009069EA /* IntervalOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EB1F994FEF009069EA /* IntervalOperators.swift */; };
+		63E064F91F994FEF009069EA /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EC1F994FEF009069EA /* IntervalType.swift */; };
+		63E064FA1F994FEF009069EA /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EC1F994FEF009069EA /* IntervalType.swift */; };
+		63E064FB1F994FEF009069EA /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EC1F994FEF009069EA /* IntervalType.swift */; };
+		63E064FC1F994FEF009069EA /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064EC1F994FEF009069EA /* IntervalType.swift */; };
+		63E064FE1F995038009069EA /* Boundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064FD1F995038009069EA /* Boundary.swift */; };
+		63E064FF1F995038009069EA /* Boundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064FD1F995038009069EA /* Boundary.swift */; };
+		63E065001F995038009069EA /* Boundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064FD1F995038009069EA /* Boundary.swift */; };
+		63E065011F995038009069EA /* Boundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064FD1F995038009069EA /* Boundary.swift */; };
+		63E065051F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065021F995057009069EA /* ExpressibleByIntervalArray.swift */; };
+		63E065061F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065021F995057009069EA /* ExpressibleByIntervalArray.swift */; };
+		63E065071F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065021F995057009069EA /* ExpressibleByIntervalArray.swift */; };
+		63E065081F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065021F995057009069EA /* ExpressibleByIntervalArray.swift */; };
+		63E065091F995057009069EA /* ExpressibleByClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065031F995057009069EA /* ExpressibleByClosedRange.swift */; };
+		63E0650A1F995057009069EA /* ExpressibleByClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065031F995057009069EA /* ExpressibleByClosedRange.swift */; };
+		63E0650B1F995057009069EA /* ExpressibleByClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065031F995057009069EA /* ExpressibleByClosedRange.swift */; };
+		63E0650C1F995057009069EA /* ExpressibleByClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065031F995057009069EA /* ExpressibleByClosedRange.swift */; };
+		63E0650D1F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */; };
+		63E0650E1F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */; };
+		63E0650F1F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */; };
+		63E065101F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */; };
+		63E065131F995081009069EA /* ExpressibleByRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065111F995081009069EA /* ExpressibleByRange.swift */; };
+		63E065141F995081009069EA /* ExpressibleByRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065111F995081009069EA /* ExpressibleByRange.swift */; };
+		63E065151F995081009069EA /* ExpressibleByRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065111F995081009069EA /* ExpressibleByRange.swift */; };
+		63E065161F995081009069EA /* ExpressibleByRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065111F995081009069EA /* ExpressibleByRange.swift */; };
+		63E065171F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
+		63E065181F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
+		63E065191F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
+		63E0651A1F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E064931F994E70009069EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E0647F1F994E70009069EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E064871F994E70009069EA;
+			remoteInfo = DLInterval_iOS;
+		};
+		63E064BE1F994F29009069EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E0647F1F994E70009069EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E064B31F994F29009069EA;
+			remoteInfo = DLInterval_tvOS;
+		};
+		63E064DA1F994F6D009069EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E0647F1F994E70009069EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E064CF1F994F6C009069EA;
+			remoteInfo = DLInterval_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63E064881F994E70009069EA /* DLInterval_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E0648B1F994E70009069EA /* DLInterval_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_iOS.h; sourceTree = "<group>"; };
+		63E0648C1F994E70009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064911F994E70009069EA /* DLInterval_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E064961F994E70009069EA /* DLInterval_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_iOSTests.swift; sourceTree = "<group>"; };
+		63E064981F994E70009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064A71F994EDD009069EA /* DLInterval_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E064A91F994EDE009069EA /* DLInterval_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_watchOS.h; sourceTree = "<group>"; };
+		63E064AA1F994EDE009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064B41F994F29009069EA /* DLInterval_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E064B61F994F29009069EA /* DLInterval_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_tvOS.h; sourceTree = "<group>"; };
+		63E064B71F994F29009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064BC1F994F29009069EA /* DLInterval_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E064C11F994F29009069EA /* DLInterval_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_tvOSTests.swift; sourceTree = "<group>"; };
+		63E064C31F994F29009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064D01F994F6C009069EA /* DLInterval_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E064D21F994F6C009069EA /* DLInterval_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_macOS.h; sourceTree = "<group>"; };
+		63E064D31F994F6D009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064D81F994F6D009069EA /* DLInterval_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E064DD1F994F6D009069EA /* DLInterval_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_macOSTests.swift; sourceTree = "<group>"; };
+		63E064DF1F994F6D009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E064E91F994FEF009069EA /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		63E064EA1F994FEF009069EA /* IntervalBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalBoundary.swift; sourceTree = "<group>"; };
+		63E064EB1F994FEF009069EA /* IntervalOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalOperators.swift; sourceTree = "<group>"; };
+		63E064EC1F994FEF009069EA /* IntervalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalType.swift; sourceTree = "<group>"; };
+		63E064FD1F995038009069EA /* Boundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boundary.swift; sourceTree = "<group>"; };
+		63E065021F995057009069EA /* ExpressibleByIntervalArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByIntervalArray.swift; sourceTree = "<group>"; };
+		63E065031F995057009069EA /* ExpressibleByClosedRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByClosedRange.swift; sourceTree = "<group>"; };
+		63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByIntervalTuple.swift; sourceTree = "<group>"; };
+		63E065111F995081009069EA /* ExpressibleByRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByRange.swift; sourceTree = "<group>"; };
+		63E065121F995081009069EA /* UnionInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnionInterval.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E064841F994E70009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E0648E1F994E70009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064921F994E70009069EA /* DLInterval_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064A31F994EDD009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064B01F994F29009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064B91F994F29009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064BD1F994F29009069EA /* DLInterval_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064CC1F994F6C009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064D51F994F6D009069EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064D91F994F6D009069EA /* DLInterval_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E0647E1F994E70009069EA = {
+			isa = PBXGroup;
+			children = (
+				63E064E81F994FEF009069EA /* DLInterval */,
+				63E0648A1F994E70009069EA /* DLInterval_iOS */,
+				63E064951F994E70009069EA /* DLInterval_iOSTests */,
+				63E064A81F994EDE009069EA /* DLInterval_watchOS */,
+				63E064B51F994F29009069EA /* DLInterval_tvOS */,
+				63E064C01F994F29009069EA /* DLInterval_tvOSTests */,
+				63E064D11F994F6C009069EA /* DLInterval_macOS */,
+				63E064DC1F994F6D009069EA /* DLInterval_macOSTests */,
+				63E064891F994E70009069EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E064891F994E70009069EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E064881F994E70009069EA /* DLInterval_iOS.framework */,
+				63E064911F994E70009069EA /* DLInterval_iOSTests.xctest */,
+				63E064A71F994EDD009069EA /* DLInterval_watchOS.framework */,
+				63E064B41F994F29009069EA /* DLInterval_tvOS.framework */,
+				63E064BC1F994F29009069EA /* DLInterval_tvOSTests.xctest */,
+				63E064D01F994F6C009069EA /* DLInterval_macOS.framework */,
+				63E064D81F994F6D009069EA /* DLInterval_macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E0648A1F994E70009069EA /* DLInterval_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				63E0648B1F994E70009069EA /* DLInterval_iOS.h */,
+				63E0648C1F994E70009069EA /* Info.plist */,
+			);
+			path = DLInterval_iOS;
+			sourceTree = "<group>";
+		};
+		63E064951F994E70009069EA /* DLInterval_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E064961F994E70009069EA /* DLInterval_iOSTests.swift */,
+				63E064981F994E70009069EA /* Info.plist */,
+			);
+			path = DLInterval_iOSTests;
+			sourceTree = "<group>";
+		};
+		63E064A81F994EDE009069EA /* DLInterval_watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				63E064A91F994EDE009069EA /* DLInterval_watchOS.h */,
+				63E064AA1F994EDE009069EA /* Info.plist */,
+			);
+			path = DLInterval_watchOS;
+			sourceTree = "<group>";
+		};
+		63E064B51F994F29009069EA /* DLInterval_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				63E064B61F994F29009069EA /* DLInterval_tvOS.h */,
+				63E064B71F994F29009069EA /* Info.plist */,
+			);
+			path = DLInterval_tvOS;
+			sourceTree = "<group>";
+		};
+		63E064C01F994F29009069EA /* DLInterval_tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E064C11F994F29009069EA /* DLInterval_tvOSTests.swift */,
+				63E064C31F994F29009069EA /* Info.plist */,
+			);
+			path = DLInterval_tvOSTests;
+			sourceTree = "<group>";
+		};
+		63E064D11F994F6C009069EA /* DLInterval_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				63E064D21F994F6C009069EA /* DLInterval_macOS.h */,
+				63E064D31F994F6D009069EA /* Info.plist */,
+			);
+			path = DLInterval_macOS;
+			sourceTree = "<group>";
+		};
+		63E064DC1F994F6D009069EA /* DLInterval_macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E064DD1F994F6D009069EA /* DLInterval_macOSTests.swift */,
+				63E064DF1F994F6D009069EA /* Info.plist */,
+			);
+			path = DLInterval_macOSTests;
+			sourceTree = "<group>";
+		};
+		63E064E81F994FEF009069EA /* DLInterval */ = {
+			isa = PBXGroup;
+			children = (
+				63E064FD1F995038009069EA /* Boundary.swift */,
+				63E065031F995057009069EA /* ExpressibleByClosedRange.swift */,
+				63E065021F995057009069EA /* ExpressibleByIntervalArray.swift */,
+				63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */,
+				63E065111F995081009069EA /* ExpressibleByRange.swift */,
+				63E064E91F994FEF009069EA /* Interval.swift */,
+				63E064EA1F994FEF009069EA /* IntervalBoundary.swift */,
+				63E064EB1F994FEF009069EA /* IntervalOperators.swift */,
+				63E064EC1F994FEF009069EA /* IntervalType.swift */,
+				63E065121F995081009069EA /* UnionInterval.swift */,
+			);
+			name = DLInterval;
+			path = ../Sources/DLInterval;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63E064851F994E70009069EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064991F994E70009069EA /* DLInterval_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064A41F994EDD009069EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064AB1F994EDE009069EA /* DLInterval_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064B11F994F29009069EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064C41F994F29009069EA /* DLInterval_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064CD1F994F6C009069EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064E01F994F6D009069EA /* DLInterval_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63E064871F994E70009069EA /* DLInterval_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E0649C1F994E70009069EA /* Build configuration list for PBXNativeTarget "DLInterval_iOS" */;
+			buildPhases = (
+				63E064831F994E70009069EA /* Sources */,
+				63E064841F994E70009069EA /* Frameworks */,
+				63E064851F994E70009069EA /* Headers */,
+				63E064861F994E70009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLInterval_iOS;
+			productName = DLInterval_iOS;
+			productReference = 63E064881F994E70009069EA /* DLInterval_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63E064901F994E70009069EA /* DLInterval_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E0649F1F994E70009069EA /* Build configuration list for PBXNativeTarget "DLInterval_iOSTests" */;
+			buildPhases = (
+				63E0648D1F994E70009069EA /* Sources */,
+				63E0648E1F994E70009069EA /* Frameworks */,
+				63E0648F1F994E70009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E064941F994E70009069EA /* PBXTargetDependency */,
+			);
+			name = DLInterval_iOSTests;
+			productName = DLInterval_iOSTests;
+			productReference = 63E064911F994E70009069EA /* DLInterval_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63E064A61F994EDD009069EA /* DLInterval_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E064AC1F994EDE009069EA /* Build configuration list for PBXNativeTarget "DLInterval_watchOS" */;
+			buildPhases = (
+				63E064A21F994EDD009069EA /* Sources */,
+				63E064A31F994EDD009069EA /* Frameworks */,
+				63E064A41F994EDD009069EA /* Headers */,
+				63E064A51F994EDD009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLInterval_watchOS;
+			productName = DLInterval_watchOS;
+			productReference = 63E064A71F994EDD009069EA /* DLInterval_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63E064B31F994F29009069EA /* DLInterval_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E064C51F994F29009069EA /* Build configuration list for PBXNativeTarget "DLInterval_tvOS" */;
+			buildPhases = (
+				63E064AF1F994F29009069EA /* Sources */,
+				63E064B01F994F29009069EA /* Frameworks */,
+				63E064B11F994F29009069EA /* Headers */,
+				63E064B21F994F29009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLInterval_tvOS;
+			productName = DLInterval_tvOS;
+			productReference = 63E064B41F994F29009069EA /* DLInterval_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63E064BB1F994F29009069EA /* DLInterval_tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E064C81F994F29009069EA /* Build configuration list for PBXNativeTarget "DLInterval_tvOSTests" */;
+			buildPhases = (
+				63E064B81F994F29009069EA /* Sources */,
+				63E064B91F994F29009069EA /* Frameworks */,
+				63E064BA1F994F29009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E064BF1F994F29009069EA /* PBXTargetDependency */,
+			);
+			name = DLInterval_tvOSTests;
+			productName = DLInterval_tvOSTests;
+			productReference = 63E064BC1F994F29009069EA /* DLInterval_tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63E064CF1F994F6C009069EA /* DLInterval_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E064E11F994F6D009069EA /* Build configuration list for PBXNativeTarget "DLInterval_macOS" */;
+			buildPhases = (
+				63E064CB1F994F6C009069EA /* Sources */,
+				63E064CC1F994F6C009069EA /* Frameworks */,
+				63E064CD1F994F6C009069EA /* Headers */,
+				63E064CE1F994F6C009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLInterval_macOS;
+			productName = DLInterval_macOS;
+			productReference = 63E064D01F994F6C009069EA /* DLInterval_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63E064D71F994F6D009069EA /* DLInterval_macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E064E41F994F6D009069EA /* Build configuration list for PBXNativeTarget "DLInterval_macOSTests" */;
+			buildPhases = (
+				63E064D41F994F6D009069EA /* Sources */,
+				63E064D51F994F6D009069EA /* Frameworks */,
+				63E064D61F994F6D009069EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E064DB1F994F6D009069EA /* PBXTargetDependency */,
+			);
+			name = DLInterval_macOSTests;
+			productName = DLInterval_macOSTests;
+			productReference = 63E064D81F994F6D009069EA /* DLInterval_macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E0647F1F994E70009069EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DL;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					63E064871F994E70009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					63E064901F994E70009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					63E064A61F994EDD009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					63E064B31F994F29009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					63E064BB1F994F29009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					63E064CF1F994F6C009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					63E064D71F994F6D009069EA = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 63E064821F994E70009069EA /* Build configuration list for PBXProject "DLInterval_iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63E0647E1F994E70009069EA;
+			productRefGroup = 63E064891F994E70009069EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E064871F994E70009069EA /* DLInterval_iOS */,
+				63E064901F994E70009069EA /* DLInterval_iOSTests */,
+				63E064A61F994EDD009069EA /* DLInterval_watchOS */,
+				63E064B31F994F29009069EA /* DLInterval_tvOS */,
+				63E064BB1F994F29009069EA /* DLInterval_tvOSTests */,
+				63E064CF1F994F6C009069EA /* DLInterval_macOS */,
+				63E064D71F994F6D009069EA /* DLInterval_macOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E064861F994E70009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E0648F1F994E70009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064A51F994EDD009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064B21F994F29009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064BA1F994F29009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064CE1F994F6C009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064D61F994F6D009069EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E064831F994E70009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E065171F995081009069EA /* UnionInterval.swift in Sources */,
+				63E064F91F994FEF009069EA /* IntervalType.swift in Sources */,
+				63E065091F995057009069EA /* ExpressibleByClosedRange.swift in Sources */,
+				63E064F11F994FEF009069EA /* IntervalBoundary.swift in Sources */,
+				63E065051F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */,
+				63E064ED1F994FEF009069EA /* Interval.swift in Sources */,
+				63E064F51F994FEF009069EA /* IntervalOperators.swift in Sources */,
+				63E0650D1F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
+				63E065131F995081009069EA /* ExpressibleByRange.swift in Sources */,
+				63E064FE1F995038009069EA /* Boundary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E0648D1F994E70009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064971F994E70009069EA /* DLInterval_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064A21F994EDD009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E065181F995081009069EA /* UnionInterval.swift in Sources */,
+				63E064FA1F994FEF009069EA /* IntervalType.swift in Sources */,
+				63E0650A1F995057009069EA /* ExpressibleByClosedRange.swift in Sources */,
+				63E064F21F994FEF009069EA /* IntervalBoundary.swift in Sources */,
+				63E065061F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */,
+				63E064EE1F994FEF009069EA /* Interval.swift in Sources */,
+				63E064F61F994FEF009069EA /* IntervalOperators.swift in Sources */,
+				63E0650E1F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
+				63E065141F995081009069EA /* ExpressibleByRange.swift in Sources */,
+				63E064FF1F995038009069EA /* Boundary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064AF1F994F29009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E065191F995081009069EA /* UnionInterval.swift in Sources */,
+				63E064FB1F994FEF009069EA /* IntervalType.swift in Sources */,
+				63E0650B1F995057009069EA /* ExpressibleByClosedRange.swift in Sources */,
+				63E064F31F994FEF009069EA /* IntervalBoundary.swift in Sources */,
+				63E065071F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */,
+				63E064EF1F994FEF009069EA /* Interval.swift in Sources */,
+				63E064F71F994FEF009069EA /* IntervalOperators.swift in Sources */,
+				63E0650F1F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
+				63E065151F995081009069EA /* ExpressibleByRange.swift in Sources */,
+				63E065001F995038009069EA /* Boundary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064B81F994F29009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064C21F994F29009069EA /* DLInterval_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064CB1F994F6C009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E0651A1F995081009069EA /* UnionInterval.swift in Sources */,
+				63E064FC1F994FEF009069EA /* IntervalType.swift in Sources */,
+				63E0650C1F995057009069EA /* ExpressibleByClosedRange.swift in Sources */,
+				63E064F41F994FEF009069EA /* IntervalBoundary.swift in Sources */,
+				63E065081F995057009069EA /* ExpressibleByIntervalArray.swift in Sources */,
+				63E064F01F994FEF009069EA /* Interval.swift in Sources */,
+				63E064F81F994FEF009069EA /* IntervalOperators.swift in Sources */,
+				63E065101F995057009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
+				63E065161F995081009069EA /* ExpressibleByRange.swift in Sources */,
+				63E065011F995038009069EA /* Boundary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E064D41F994F6D009069EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E064DE1F994F6D009069EA /* DLInterval_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E064941F994E70009069EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E064871F994E70009069EA /* DLInterval_iOS */;
+			targetProxy = 63E064931F994E70009069EA /* PBXContainerItemProxy */;
+		};
+		63E064BF1F994F29009069EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E064B31F994F29009069EA /* DLInterval_tvOS */;
+			targetProxy = 63E064BE1F994F29009069EA /* PBXContainerItemProxy */;
+		};
+		63E064DB1F994F6D009069EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E064CF1F994F6C009069EA /* DLInterval_macOS */;
+			targetProxy = 63E064DA1F994F6D009069EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		63E0649A1F994E70009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63E0649B1F994E70009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63E0649D1F994E70009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLInterval_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63E0649E1F994E70009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLInterval_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63E064A01F994E70009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DLInterval_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63E064A11F994E70009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DLInterval_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63E064AD1F994EDE009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLInterval_watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		63E064AE1F994EDE009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLInterval_watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		63E064C61F994F29009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLInterval_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		63E064C71F994F29009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLInterval_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		63E064C91F994F29009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DLInterval_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		63E064CA1F994F29009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DLInterval_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		63E064E21F994F6D009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DLInterval_macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		63E064E31F994F6D009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DLInterval_macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		63E064E51F994F6D009069EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DLInterval_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		63E064E61F994F6D009069EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DLInterval_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "Comunity.DLInterval-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E064821F994E70009069EA /* Build configuration list for PBXProject "DLInterval_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E0649A1F994E70009069EA /* Debug */,
+				63E0649B1F994E70009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E0649C1F994E70009069EA /* Build configuration list for PBXNativeTarget "DLInterval_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E0649D1F994E70009069EA /* Debug */,
+				63E0649E1F994E70009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E0649F1F994E70009069EA /* Build configuration list for PBXNativeTarget "DLInterval_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E064A01F994E70009069EA /* Debug */,
+				63E064A11F994E70009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E064AC1F994EDE009069EA /* Build configuration list for PBXNativeTarget "DLInterval_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E064AD1F994EDE009069EA /* Debug */,
+				63E064AE1F994EDE009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E064C51F994F29009069EA /* Build configuration list for PBXNativeTarget "DLInterval_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E064C61F994F29009069EA /* Debug */,
+				63E064C71F994F29009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E064C81F994F29009069EA /* Build configuration list for PBXNativeTarget "DLInterval_tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E064C91F994F29009069EA /* Debug */,
+				63E064CA1F994F29009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E064E11F994F6D009069EA /* Build configuration list for PBXNativeTarget "DLInterval_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E064E21F994F6D009069EA /* Debug */,
+				63E064E31F994F6D009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E064E41F994F6D009069EA /* Build configuration list for PBXNativeTarget "DLInterval_macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E064E51F994F6D009069EA /* Debug */,
+				63E064E61F994F6D009069EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E0647F1F994E70009069EA /* Project object */;
+}
