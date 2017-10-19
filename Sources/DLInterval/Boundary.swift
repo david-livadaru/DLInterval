@@ -7,17 +7,22 @@
 
 import Foundation
 
+public enum BoundaryType {
+    case closed, open
+}
+
 public struct Boundary: Comparable {
-    public enum BoundaryType {
-        case closed, open
-    }
-    
     public enum Side {
         case left, right
     }
     
-    let type: BoundaryType
-    let side: Side
+    public let type: BoundaryType
+    public let side: Side
+
+    public init(type: BoundaryType, side: Side) {
+        self.type = type
+        self.side = side
+    }
     
     // MARK: Equatable
     

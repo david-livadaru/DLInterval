@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		63E064921F994E70009069EA /* DLInterval_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E064881F994E70009069EA /* DLInterval_iOS.framework */; };
-		63E064971F994E70009069EA /* DLInterval_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E064961F994E70009069EA /* DLInterval_iOSTests.swift */; };
 		63E064991F994E70009069EA /* DLInterval_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0648B1F994E70009069EA /* DLInterval_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E064AB1F994EDE009069EA /* DLInterval_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E064A91F994EDE009069EA /* DLInterval_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E064BD1F994F29009069EA /* DLInterval_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E064B41F994F29009069EA /* DLInterval_tvOS.framework */; };
@@ -57,6 +56,8 @@
 		63E065181F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
 		63E065191F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
 		63E0651A1F995081009069EA /* UnionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065121F995081009069EA /* UnionInterval.swift */; };
+		63E065211F995320009069EA /* DLInterval_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065201F995320009069EA /* DLInterval_iOSTests.swift */; };
+		63E065231F99533A009069EA /* BoundaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065221F99533A009069EA /* BoundaryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +89,6 @@
 		63E0648B1F994E70009069EA /* DLInterval_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_iOS.h; sourceTree = "<group>"; };
 		63E0648C1F994E70009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E064911F994E70009069EA /* DLInterval_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63E064961F994E70009069EA /* DLInterval_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_iOSTests.swift; sourceTree = "<group>"; };
 		63E064981F994E70009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E064A71F994EDD009069EA /* DLInterval_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E064A91F994EDE009069EA /* DLInterval_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_watchOS.h; sourceTree = "<group>"; };
@@ -115,6 +115,8 @@
 		63E065041F995057009069EA /* ExpressibleByIntervalTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByIntervalTuple.swift; sourceTree = "<group>"; };
 		63E065111F995081009069EA /* ExpressibleByRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByRange.swift; sourceTree = "<group>"; };
 		63E065121F995081009069EA /* UnionInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnionInterval.swift; sourceTree = "<group>"; };
+		63E065201F995320009069EA /* DLInterval_iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLInterval_iOSTests.swift; path = ../../Tests/iOS/DLInterval_iOSTests.swift; sourceTree = "<group>"; };
+		63E065221F99533A009069EA /* BoundaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +216,8 @@
 		63E064951F994E70009069EA /* DLInterval_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				63E064961F994E70009069EA /* DLInterval_iOSTests.swift */,
+				63E065221F99533A009069EA /* BoundaryTests.swift */,
+				63E065201F995320009069EA /* DLInterval_iOSTests.swift */,
 				63E064981F994E70009069EA /* Info.plist */,
 			);
 			path = DLInterval_iOSTests;
@@ -453,7 +456,7 @@
 		63E0647F1F994E70009069EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = DL;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "";
@@ -585,7 +588,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E064971F994E70009069EA /* DLInterval_iOSTests.swift in Sources */,
+				63E065211F995320009069EA /* DLInterval_iOSTests.swift in Sources */,
+				63E065231F99533A009069EA /* BoundaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
