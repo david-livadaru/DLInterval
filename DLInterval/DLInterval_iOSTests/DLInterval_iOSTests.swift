@@ -1,14 +1,15 @@
 //
-//  DLInterval_tvOSTests.swift
-//  DLInterval_tvOSTests
+//  DLInterval_iOSTests.swift
+//  DLInterval_iOSTests
 //
 //  Created by David Livadaru on 10/20/17.
+//  Copyright © 2017 David Livadaru. All rights reserved.
 //
 
 import XCTest
-@testable import DLInterval_tvOS
+@testable import DLInterval_iOS
 
-class DLInterval_tvOSTests: XCTestCase {
+class DLInterval_iOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -3,6 +3,7 @@
 //  DLInterval_macOSTests
 //
 //  Created by David Livadaru on 10/20/17.
+//  Copyright © 2017 David Livadaru. All rights reserved.
 //
 
 import XCTest
