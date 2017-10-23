@@ -51,6 +51,20 @@ ExpressibleByIntervalTuple, ExpressibleByClosedRange, ExpressibleByRange, Compar
         
         validateBounds()
     }
+
+    public init(_ boundaryValues: [Double]) {
+        assert(boundaryValues.count > 0, "Cannot create an interval with less than 2 doubles")
+        if boundaryValues.count > 2 {
+            print("The following values are ignored \(boundaryValues[2..<boundaryValues.endIndex])")
+        }
+
+        lowerBoundary = IntervalBoundary(value: boundaryValues[0],
+                                         boundary: Boundary(type: .closed, side: .left))
+        upperBoundary = IntervalBoundary(value: boundaryValues[1],
+                                         boundary: Boundary(type: .closed, side: .right))
+
+        validateBounds()
+    }
     
     // MARK: ExpressibleByIntervalTuple
     
@@ -94,16 +108,17 @@ ExpressibleByIntervalTuple, ExpressibleByClosedRange, ExpressibleByRange, Compar
     }
     
     public func intersection(with other: Interval) -> Interval? {
-        var lower: IntervalBoundary! // ! is safe because will be set before usage
-        if contains(other.lowerBoundary) {
-            lower = other.lowerBoundary
-        } else if other.contains(lowerBoundary) {
-            lower = lowerBoundary
+        let min = Swift.min(self, other)
+        let max = Swift.max(self, other)
+
+        let lower: IntervalBoundary
+        if min.upperBoundary.intersects(other: max.lowerBoundary) {
+            lower = max.lowerBoundary
         } else {
             return nil
         }
         
-        let upper = min(other.upperBoundary, upperBoundary)
+        let upper = Swift.min(other.upperBoundary, upperBoundary)
         return Interval(lowerBoundary: lower, upperBoundary: upper)
     }
     
@@ -114,41 +129,44 @@ ExpressibleByIntervalTuple, ExpressibleByClosedRange, ExpressibleByRange, Compar
     // MARK: Comparable
     
     public static func <(_ lhs: Interval, _ rhs: Interval) -> Bool {
-        return lhs.lowerBoundary < rhs.lowerBoundary
+        if lhs.lowerBoundary == rhs.lowerBoundary {
+            return lhs.upperBoundary < rhs.upperBoundary
+        } else {
+            return lhs.lowerBoundary < rhs.lowerBoundary
+        }
     }
     
     // MARK: Equatable
     
     public static func ==(_ lhs: Interval, _ rhs: Interval) -> Bool {
-        return lhs.lowerBoundary == rhs.lowerBoundary && lhs.lowerBoundary == rhs.upperBoundary
+        return lhs.lowerBoundary == rhs.lowerBoundary && lhs.upperBoundary == rhs.upperBoundary
     }
     
     // MARK: Private functionality
     
     private func validateBounds() {
-        assert(upperBoundary >= lowerBoundary, "Cannot create an interval with lowerBoundary > upperBoundary.")
+        assert(upperBoundary.value >= lowerBoundary.value,
+               "Cannot create an interval with lower value greater upper value.")
         
-        assert(lowerBoundary.boundary.side == .left, "Left boundary must have .left side")
-        assert(upperBoundary.boundary.side == .right, "Left boundary must have .right side")
-        
+        assert(lowerBoundary.boundary.side == .left, "Lower boundary must have .left side")
+        assert(upperBoundary.boundary.side == .right, "Upper boundary must have .right side")
         
         switch (lowerBoundary.boundary.type, upperBoundary.boundary.type) {
         case (.closed, .open):
             assert(lowerBoundary.value != -Double.infinity, "Cannot create an interval closed in -infinity.")
-            assert(upperBoundary.value != lowerBoundary.value, "Cannot create a closed open interval with the same bound value.")
+            assert(upperBoundary.value != lowerBoundary.value,
+                   "Cannot create a closed open interval with the same bound value.")
         case (.open, .closed):
-            assert(upperBoundary.value != lowerBoundary.value, "Cannot create an open closed interval with the same bound value.")
+            assert(upperBoundary.value != lowerBoundary.value,
+                   "Cannot create an open closed interval with the same bound value.")
             assert(upperBoundary.value != Double.infinity, "Cannot create an interval closed in infinity.")
         case (.closed, .closed):
             assert(lowerBoundary.value != -Double.infinity, "Cannot create an interval closed in -infinity.")
             assert(upperBoundary.value != Double.infinity, "Cannot create an interval closed in infinity.")
         case (.open, .open):
-            assert(upperBoundary.value != lowerBoundary.value, "Cannot create a bounded interval with the same bound value.")
+            assert(upperBoundary.value != lowerBoundary.value,
+                   "Cannot create a bounded interval with the same bound value.")
         }
-    }
-    
-    private func contains(_ element: IntervalBoundary) -> Bool {
-        return element <= upperBoundary && element >= lowerBoundary
     }
     
     private static func validateIntervalArray(_ array: [AbstractInterval]) {

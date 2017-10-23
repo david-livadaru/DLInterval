@@ -38,9 +38,9 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
         mergeIntervals()
     }
     
-    public func contains(_ element: Double) -> Bool {
+    public func contains(_ value: Double) -> Bool {
         for interval in intervals {
-            if interval.contains(element) {
+            if interval.contains(value) {
                 return true
             }
         }

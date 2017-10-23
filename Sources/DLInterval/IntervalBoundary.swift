@@ -34,6 +34,22 @@ public struct IntervalBoundary: Comparable {
             return element <= value
         }
     }
+
+    func intersects(other: IntervalBoundary, strictBoundaryTypeCheck: Bool = true) -> Bool {
+        if boundary.side == other.boundary.side {
+            return true
+        }
+
+        let diff = intersectionDiffence(with: other)
+        if strictBoundaryTypeCheck == false, boundary.type == .closed || other.boundary.type == .closed {
+            return diff <= 0.0
+        } else {
+            if diff == 0, boundary.type == .closed, other.boundary.type == .closed {
+                return true
+            }
+            return diff < 0.0
+        }
+    }
     
     // MARK: Equatable
     
@@ -49,5 +65,21 @@ public struct IntervalBoundary: Comparable {
         } else {
             return lhs.value < rhs.value
         }
+    }
+
+    // MARK: Private functionality
+
+    private func intersectionDiffence(with other: IntervalBoundary) -> Double {
+        let left: Double
+        let right: Double
+
+        if boundary.side == .left {
+            left = value
+            right = other.value
+        } else {
+            left = other.value
+            right = value
+        }
+        return left - right
     }
 }

@@ -34,7 +34,9 @@ public struct Boundary: Comparable {
     
     public static func <(_ lhs: Boundary, _ rhs: Boundary) -> Bool {
         switch (lhs.side, lhs.type, rhs.side, rhs.type) {
-        case (.right, .open, .right, .closed):
+        case (.right, .open, .right, .closed), (.right, .open, .left, .closed), (.right, .open, .left, .open):
+            fallthrough
+        case (.right, .closed, .left, .closed), (.right, .closed, .left, .open):
             fallthrough
         case (.left, .closed, .left, .open):
             return true

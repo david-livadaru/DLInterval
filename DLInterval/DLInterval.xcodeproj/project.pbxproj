@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C1DD7A1F9D14D400F93B82 /* IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1DD791F9D14D400F93B82 /* IntervalTests.swift */; };
+		63C1DD7C1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1DD7B1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift */; };
 		63E0655E1F995676009069EA /* DLInterval_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E065551F995676009069EA /* DLInterval_iOS.framework */; };
-		63E065631F995676009069EA /* DLInterval_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065621F995676009069EA /* DLInterval_iOSTests.swift */; };
+		63E065631F995676009069EA /* DLIntervaliOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065621F995676009069EA /* DLIntervaliOSTests.swift */; };
 		63E065651F995676009069EA /* DLInterval_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E065571F995676009069EA /* DLInterval_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E065751F995689009069EA /* DLInterval_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E065731F995689009069EA /* DLInterval_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E065871F995699009069EA /* DLInterval_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0657E1F995698009069EA /* DLInterval_tvOS.framework */; };
-		63E0658C1F995699009069EA /* DLInterval_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0658B1F995699009069EA /* DLInterval_tvOSTests.swift */; };
+		63E0658C1F995699009069EA /* DLIntervaltvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0658B1F995699009069EA /* DLIntervaltvOSTests.swift */; };
 		63E0658E1F995699009069EA /* DLInterval_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E065801F995698009069EA /* DLInterval_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E065A31F9956B0009069EA /* DLInterval_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0659A1F9956AF009069EA /* DLInterval_macOS.framework */; };
-		63E065A81F9956B0009069EA /* DLInterval_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065A71F9956B0009069EA /* DLInterval_macOSTests.swift */; };
+		63E065A81F9956B0009069EA /* DLIntervalmacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065A71F9956B0009069EA /* DLIntervalmacOSTests.swift */; };
 		63E065AA1F9956B0009069EA /* DLInterval_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0659C1F9956AF009069EA /* DLInterval_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E065BB1F9956EC009069EA /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065B11F9956EB009069EA /* IntervalType.swift */; };
 		63E065BC1F9956EC009069EA /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065B11F9956EB009069EA /* IntervalType.swift */; };
@@ -85,11 +87,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63C1DD791F9D14D400F93B82 /* IntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTests.swift; sourceTree = "<group>"; };
+		63C1DD7B1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalBoundaryTests.swift; sourceTree = "<group>"; };
 		63E065551F995676009069EA /* DLInterval_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E065571F995676009069EA /* DLInterval_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_iOS.h; sourceTree = "<group>"; };
 		63E065581F995676009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E0655D1F995676009069EA /* DLInterval_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63E065621F995676009069EA /* DLInterval_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_iOSTests.swift; sourceTree = "<group>"; };
+		63E065621F995676009069EA /* DLIntervaliOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLIntervaliOSTests.swift; sourceTree = "<group>"; };
 		63E065641F995676009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E065711F995689009069EA /* DLInterval_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E065731F995689009069EA /* DLInterval_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_watchOS.h; sourceTree = "<group>"; };
@@ -98,13 +102,13 @@
 		63E065801F995698009069EA /* DLInterval_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_tvOS.h; sourceTree = "<group>"; };
 		63E065811F995698009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E065861F995698009069EA /* DLInterval_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63E0658B1F995699009069EA /* DLInterval_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_tvOSTests.swift; sourceTree = "<group>"; };
+		63E0658B1F995699009069EA /* DLIntervaltvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLIntervaltvOSTests.swift; sourceTree = "<group>"; };
 		63E0658D1F995699009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E0659A1F9956AF009069EA /* DLInterval_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E0659C1F9956AF009069EA /* DLInterval_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_macOS.h; sourceTree = "<group>"; };
 		63E0659D1F9956AF009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E065A21F9956B0009069EA /* DLInterval_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLInterval_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63E065A71F9956B0009069EA /* DLInterval_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLInterval_macOSTests.swift; sourceTree = "<group>"; };
+		63E065A71F9956B0009069EA /* DLIntervalmacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLIntervalmacOSTests.swift; sourceTree = "<group>"; };
 		63E065A91F9956B0009069EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E065B11F9956EB009069EA /* IntervalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntervalType.swift; path = ../../Sources/DLInterval/IntervalType.swift; sourceTree = "<group>"; };
 		63E065B21F9956EB009069EA /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interval.swift; path = ../../Sources/DLInterval/Interval.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				63E065E51F99572C009069EA /* BoundaryTests.swift */,
+				63C1DD791F9D14D400F93B82 /* IntervalTests.swift */,
+				63C1DD7B1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift */,
 			);
 			path = DLIntervalTests;
 			sourceTree = "<group>";
@@ -242,7 +248,7 @@
 		63E065611F995676009069EA /* DLInterval_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				63E065621F995676009069EA /* DLInterval_iOSTests.swift */,
+				63E065621F995676009069EA /* DLIntervaliOSTests.swift */,
 				63E065641F995676009069EA /* Info.plist */,
 			);
 			path = DLInterval_iOSTests;
@@ -269,7 +275,7 @@
 		63E0658A1F995699009069EA /* DLInterval_tvOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				63E0658B1F995699009069EA /* DLInterval_tvOSTests.swift */,
+				63E0658B1F995699009069EA /* DLIntervaltvOSTests.swift */,
 				63E0658D1F995699009069EA /* Info.plist */,
 			);
 			path = DLInterval_tvOSTests;
@@ -287,7 +293,7 @@
 		63E065A61F9956B0009069EA /* DLInterval_macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				63E065A71F9956B0009069EA /* DLInterval_macOSTests.swift */,
+				63E065A71F9956B0009069EA /* DLIntervalmacOSTests.swift */,
 				63E065A91F9956B0009069EA /* Info.plist */,
 			);
 			path = DLInterval_macOSTests;
@@ -339,6 +345,7 @@
 				63E065511F995676009069EA /* Frameworks */,
 				63E065521F995676009069EA /* Headers */,
 				63E065531F995676009069EA /* Resources */,
+				63C1DD781F9D0BB300F93B82 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -577,6 +584,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63C1DD781F9D0BB300F93B82 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63E065501F995676009069EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -599,8 +623,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E065631F995676009069EA /* DLInterval_iOSTests.swift in Sources */,
+				63E065631F995676009069EA /* DLIntervaliOSTests.swift in Sources */,
 				63E065E61F99572C009069EA /* BoundaryTests.swift in Sources */,
+				63C1DD7C1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift in Sources */,
+				63C1DD7A1F9D14D400F93B82 /* IntervalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E0658C1F995699009069EA /* DLInterval_tvOSTests.swift in Sources */,
+				63E0658C1F995699009069EA /* DLIntervaltvOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,7 +693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E065A81F9956B0009069EA /* DLInterval_macOSTests.swift in Sources */,
+				63E065A81F9956B0009069EA /* DLIntervalmacOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
