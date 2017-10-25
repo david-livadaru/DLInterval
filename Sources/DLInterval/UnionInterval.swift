@@ -19,7 +19,7 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
     }
     
     public var isEmpty: Bool {
-        return intervals.count > 0
+        return intervals.count == 0
     }
     
     public typealias Element = Interval
@@ -30,10 +30,16 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
     }
     
     public mutating func append(_ interval: Interval) {
-        if let index = intervals.index(where: { interval > $0 }) {
-            intervals.insert(interval, at: index)
-        } else {
-            intervals.append(interval)
+        append([interval])
+    }
+
+    public mutating func append(_ union: UnionInterval) {
+        for interval in union.intervals {
+            if let index = intervals.index(where: { $0 > interval }) {
+                intervals.insert(interval, at: index)
+            } else {
+                intervals.append(interval)
+            }
         }
         mergeIntervals()
     }
@@ -63,24 +69,29 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
     // MARK: Private functionality
     
     private mutating func mergeIntervals() {
+        guard canMergeIntervals() else { return }
         var newIntervals: [Interval] = []
-        for index in 0..<intervals.count - 1 {
+        var index = 0
+        while index < intervals.count - 1 {
             let current = intervals[index]
             let next = intervals[index + 1]
-            
+
             if canMerge(current, with: next) {
                 newIntervals.append(merge(current, with: next))
             } else {
                 newIntervals.append(contentsOf: [current, next])
             }
+            index += 2
+        }
+        if intervals.count % 2 == 1, let lastInterval = intervals.last {
+            newIntervals.append(lastInterval)
         }
         intervals = newIntervals
-        if canMergeIntervals() {
-            mergeIntervals()
-        }
+        mergeIntervals()
     }
     
     private func canMergeIntervals() -> Bool {
+        guard intervals.count >= 2 else { return false }
         for index in 0..<intervals.count - 1 {
             let current = intervals[index]
             let next = intervals[index + 1]
