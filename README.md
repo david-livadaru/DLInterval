@@ -1,3 +1,3 @@
-![DLInterval Logo](resources/DLIntervalLogo.png)
+![DLInterval Logo](DLIntervalLogo.png)
 
 A description of this package.
