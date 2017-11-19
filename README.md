@@ -6,15 +6,18 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-4BC51D.svg?style=flat)](https://github.com/CocoaPods/CocoaPods)
-[![Swift 4.0](https://img.shields.io/badge/Swift_4.0-compatible-orange.svg?style=flat)](https://swift.org)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange.svg?style=flat)](https://swift.org/package-manager/)
-
+[![Swift 4.0](https://img.shields.io/badge/Swift_4.0-compatible-orange.svg?style=flat)](https://swift.org)
 
 This Swift module aims to provide a solution to easily create mathemical intervals.
 
 ## Table of contents
 
 - [Usage](https://github.com/davidlivadaru/DLInterval#usage)
+	- [Creation](https://github.com/davidlivadaru/DLInterval#creation)
+	- [Check](https://github.com/davidlivadaru/DLInterval#check)
+	- [Unions](https://github.com/davidlivadaru/DLInterval#unions)
+	- [Intersections](https://github.com/davidlivadaru/DLInterval#intersections)
 - [Installation](https://github.com/davidlivadaru/DLInterval#installation)
 	- [Carthage](https://github.com/davidlivadaru/DLInterval#2-carthage)
 	- [CocoaPods](https://github.com/davidlivadaru/DLInterval#3-cocoapods)
@@ -25,6 +28,8 @@ This Swift module aims to provide a solution to easily create mathemical interva
 
 ## Usage
 
+### Creation
+
 `Interval` has constructors to create intervals using the notations we're used to from mathmatics:
 
 `[1, 2]` and `(1, 2)`
@@ -34,11 +39,11 @@ let closedClosed = Interval([1..2])    // [1, 2]
 let openOpen = Interval((1..2))        // (1, 2)
 ```
 
-For convenience, range operators may be used.
+For convenience, range operators may be used:
 
 ```swift
-let closedClosed2: Interval = 1...2    // [1, 2]
-let closedOpen2: Interval = 1..<2      // [1, 2)
+let closedClosed: Interval = 1...2    // [1, 2]
+let closedOpen: Interval = 1..<2      // [1, 2)
 ```
 
 For half open intervals, there are some new operators: 
@@ -53,7 +58,7 @@ let openClosed: Interval = 1.>.2       // (1, 2]
 let openOpen: Interval = 1.><.2        // (1, 2)
 ```
 
-To create intervals with infinity as boundaries
+To create intervals with infinity as boundaries:
 
 ```swift
 let negativeInfinity: Interval = -Double.infinity.>.0 // (-inf, 0]
@@ -61,6 +66,52 @@ let positiveInfinity: Interval = 0.><.Double.Infinity // (0, +inf)
 ```
 
 Note that creating an interval with a closed boundary using infinity will fail.
+
+### Check
+
+You may check if an interval contains a double value:
+
+```swift
+let closedOpen: Interval = 1.<.2
+closedOpen.contains(1)   // true
+closedOpen.contains(2)   // false
+closedOpen.contains(1.1) // true
+```
+
+Working with infinity values:
+
+```swift
+let closedOpen: Interval = 1.<.2
+closedOpen.contains(Double.infinity)  // false
+closedOpen.contains(-Double.infinity) // false
+
+let positiveInfinity: Interval = 0.><.Double.Infinity
+positiveInfinity.contains(Double.infinity)  // true
+positiveInfinity.contains(-Double.infinity) // false
+```
+
+### Unions
+
+Creating a union from 2 intervals:
+
+```swift
+let firstInterval: Interval = -Double.infinity.>.0   // (-inf, 0]
+let secondInterval: Interval = 0.><.1                // (0, 1)
+let union = firstInterval.formUnion(secondInterval)  // (-inf, 1)
+```
+
+Note that union is a new data type called `UnionInterval`.
+
+### Intersections
+
+To find intersection of 2 intervals:
+
+```swift
+let firstInterval: Interval = -Double.infinity.><.1                 // (-inf, 1)
+let secondInterval: Interval = -1.><.5.0                            // (-1, 5)
+let intersection = firstInterval.intersection(with: secondInterval) // (-1, 1)
+```
+Note that `Interval`'s intersection returns an `Interval?` and `UnionInterval`'s returns `UnionInterval`.
 
 ## Installation
 
@@ -85,12 +136,29 @@ Add the dependency in your `Cartfile`.
 github "davidlivadaru/DLInterval"
 ```
 
+If you need the framework only for a single OS, then I propose to use `--platform [iOS|macOS|watchOS|tvOS]` specifier along with `carthage update`.
+
+You must to import the module using:
+
+```swift
+import DLInterval_iOS
+import DLInterval_macOS
+import DLInterval_watchOS
+import DLInterval_tvOS
+```
+
 ### 2. [CocoaPods](https://github.com/CocoaPods/CocoaPods)
 
 Add the dependency in your `Podfile`.
 
 ```
 pod 'DLInterval'
+```
+
+You must to import the module using:
+
+```swift
+import DLInterval
 ```
 
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
@@ -101,6 +169,12 @@ Add the the following dependecy in your `Package.swift`.
 dependencies: [
     .package(url: "https://github.com/davidlivadaru/DLInterval.git", .upToNextMinor(from: "1.0.0"))
 ]
+```
+
+You must to import the module using:
+
+```swift
+import DLInterval
 ```
 
 ## Contribution
