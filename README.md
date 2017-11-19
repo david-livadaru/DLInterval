@@ -25,7 +25,9 @@ This Swift module aims to provide a solution to easily create mathemical interva
 
 ## Usage
 
-`Interval` has constructors to create intervals using the notations we're used to from mathmatics `[1, 2]` and `(1, 2)`.
+`Interval` has constructors to create intervals using the notations we're used to from mathmatics:
+
+`[1, 2]` and `(1, 2)`
 
 ```swift
 let closedClosed = Interval([1..2])    // [1, 2]
@@ -69,7 +71,7 @@ OS requirements:
 - iOS 10.0 and later.
 - watchOS 3.0 and later.
 - tvOS 10.0 and later.
-- macOS 11.0 and later.
+- macOS 10.11 and later.
 - Ubuntu check [official site](https://swift.org/download/#releases) which provides support for Swift 4.0.
 
 
@@ -77,13 +79,29 @@ Choose your preffered dependency manager:
 
 ### 1. [Carthage](https://github.com/Carthage/Carthage)
 
+Add the dependency in your `Cartfile`.
+
 ```
 github "davidlivadaru/DLInterval"
 ```
 
 ### 2. [CocoaPods](https://github.com/CocoaPods/CocoaPods)
 
+Add the dependency in your `Podfile`.
+
+```
+pod 'DLInterval'
+```
+
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
+
+Add the the following dependecy in your `Package.swift`.
+
+```
+dependencies: [
+    .package(url: "https://github.com/davidlivadaru/DLInterval.git", .upToNextMinor(from: "1.0.0"))
+]
+```
 
 ## Contribution
 
