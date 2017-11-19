@@ -9,7 +9,7 @@
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange.svg?style=flat)](https://swift.org/package-manager/)
 [![Swift 4.0](https://img.shields.io/badge/Swift_4.0-compatible-orange.svg?style=flat)](https://swift.org)
 
-This Swift module aims to provide a solution to easily create mathemical intervals.
+This Swift module aims to provide a solution to easily create mathematical intervals.
 
 ## Table of contents
 
@@ -19,10 +19,9 @@ This Swift module aims to provide a solution to easily create mathemical interva
 	- [Unions](https://github.com/davidlivadaru/DLInterval#unions)
 	- [Intersections](https://github.com/davidlivadaru/DLInterval#intersections)
 - [Installation](https://github.com/davidlivadaru/DLInterval#installation)
-	- [Carthage](https://github.com/davidlivadaru/DLInterval#2-carthage)
-	- [CocoaPods](https://github.com/davidlivadaru/DLInterval#3-cocoapods)
-	- [Swift Package Manager](https://github.com/davidlivadaru/DLInterval#3-cocoapods)
-- [Tips](https://github.com/davidlivadaru/DLInterval#tips)
+	- [Carthage](https://github.com/davidlivadaru/DLInterval#1-carthage)
+	- [CocoaPods](https://github.com/davidlivadaru/DLInterval#2-cocoapods)
+	- [Swift Package Manager](https://github.com/davidlivadaru/DLInterval#3-swift-package-manager)
 - [Contribution](https://github.com/davidlivadaru/DLInterval#contribution)
 - [License](https://github.com/davidlivadaru/DLInterval#license)
 
@@ -46,7 +45,7 @@ let closedClosed: Interval = 1...2    // [1, 2]
 let closedOpen: Interval = 1..<2      // [1, 2)
 ```
 
-For half open intervals, there are some new operators: 
+For half open intervals there are some new operators: 
 
 *  `.>.`  - first boundary is open
 *  `.<.`  - second boundary is open
@@ -65,7 +64,7 @@ let negativeInfinity: Interval = -Double.infinity.>.0 // (-inf, 0]
 let positiveInfinity: Interval = 0.><.Double.Infinity // (0, +inf)
 ```
 
-Note that creating an interval with a closed boundary using infinity will fail.
+**Note** that creating an interval with a closed boundary using infinity will fail.
 
 ### Check
 
@@ -78,7 +77,7 @@ closedOpen.contains(2)   // false
 closedOpen.contains(1.1) // true
 ```
 
-Working with infinity values:
+Checking infinity values:
 
 ```swift
 let closedOpen: Interval = 1.<.2
@@ -100,7 +99,7 @@ let secondInterval: Interval = 0.><.1                // (0, 1)
 let union = firstInterval.formUnion(secondInterval)  // (-inf, 1)
 ```
 
-Note that union is a new data type called `UnionInterval`.
+Note that `union` is a new data type called `UnionInterval`.
 
 ### Intersections
 
@@ -126,7 +125,7 @@ OS requirements:
 - Ubuntu check [official site](https://swift.org/download/#releases) which provides support for Swift 4.0.
 
 
-Choose your preffered dependency manager:
+Choose your preferred dependency manager:
 
 ### 1. [Carthage](https://github.com/Carthage/Carthage)
 
@@ -136,7 +135,7 @@ Add the dependency in your `Cartfile`.
 github "davidlivadaru/DLInterval"
 ```
 
-If you need the framework only for a single OS, then I propose to use `--platform [iOS|macOS|watchOS|tvOS]` specifier along with `carthage update`.
+If you need the framework only for a single OS, then I propose to use `--platform [iOS|macOS|watchOS|tvOS]` specifier when your perform `carthage update`.
 
 You must to import the module using:
 
@@ -163,12 +162,22 @@ import DLInterval
 
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
 
-Add the the following dependecy in your `Package.swift`.
+Add the the following dependecy in your `Package.swift`:
 
 ```
 dependencies: [
     .package(url: "https://github.com/davidlivadaru/DLInterval.git", .upToNextMinor(from: "1.0.0"))
 ]
+```
+
+and update your target's dependencies: 
+
+```
+targets: [
+        .target(
+            name: "YourTargetName",
+            dependencies: ["DLInterval"])),
+    ]
 ```
 
 You must to import the module using:
@@ -179,10 +188,10 @@ import DLInterval
 
 ## Contribution
 
-Module is covered by units. However, bugs always slip through.
+Module is covered by units, however, bugs always slip through.
 If you find a bug in the module create an [issue](https://github.com/davidlivadaru/DLInterval/issues).
 
-If you want contribute on fixing bugs or implementing new features, then create a [pull request](https://github.com/davidlivadaru/DLInterval/pulls).
+If you want contribute on fixing bugs or implementing new features then create a [pull request](https://github.com/davidlivadaru/DLInterval/pulls).
 
 ## License
 
