@@ -168,7 +168,7 @@ Add the the following dependecy in your `Package.swift`:
 
 ```
 dependencies: [
-    .package(url: "https://github.com/davidlivadaru/DLInterval.git", .upToNextMinor(from: "1.0.0"))
+    .package(url: "https://github.com/davidlivadaru/DLInterval.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
