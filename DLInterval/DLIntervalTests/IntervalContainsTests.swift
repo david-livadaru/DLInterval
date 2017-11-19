@@ -25,6 +25,11 @@ class IntervalContainsTests: XCTestCase {
         XCTAssertTrue(interval.contains(0.9999))
     }
 
+    func testContains_forSuccess3() {
+        let interval = Interval(0.0..<Double.infinity)
+        XCTAssertTrue(interval.contains(Double.infinity))
+    }
+
     func testContains_forFailure() {
         let interval = Interval(0.0...1.0)
         XCTAssertFalse(interval.contains(-1.0))
@@ -39,6 +44,11 @@ class IntervalContainsTests: XCTestCase {
         XCTAssertFalse(interval.contains(-1.0))
         XCTAssertFalse(interval.contains(1.0))
         XCTAssertFalse(interval.contains(Double.infinity))
+        XCTAssertFalse(interval.contains(-Double.infinity))
+    }
+
+    func testContains_forFailure3() {
+        let interval = Interval(0.0..<Double.infinity)
         XCTAssertFalse(interval.contains(-Double.infinity))
     }
 }
