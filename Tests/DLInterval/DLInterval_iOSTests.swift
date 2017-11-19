@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import DLInterval_iOS
+@testable import DLInterval
 
 class DLInterval_iOSTests: XCTestCase {
     
