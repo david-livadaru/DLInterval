@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DLInterval"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A Swift module which provides an abstractions of mathematical intervals."
 
   s.homepage     = "https://github.com/davidlivadaru/DLInterval"
