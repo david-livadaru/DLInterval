@@ -13,6 +13,15 @@
 		637FB6B61FA1033F0000503A /* IntervalUnionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FB6B51FA1033F0000503A /* IntervalUnionTests.swift */; };
 		637FB6B81FA103E50000503A /* IntervalComparisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FB6B71FA103E50000503A /* IntervalComparisonTests.swift */; };
 		637FB6BA1FA106ED0000503A /* UnionIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FB6B91FA106ED0000503A /* UnionIntervalTests.swift */; };
+		6389A3CB200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CA200D370E002C4DC8 /* Double+FrameworkExtension.swift */; };
+		6389A3CC200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CA200D370E002C4DC8 /* Double+FrameworkExtension.swift */; };
+		6389A3CD200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CA200D370E002C4DC8 /* Double+FrameworkExtension.swift */; };
+		6389A3CE200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CA200D370E002C4DC8 /* Double+FrameworkExtension.swift */; };
+		6389A3D0200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CF200D37A9002C4DC8 /* IntervalExtremum.swift */; };
+		6389A3D1200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CF200D37A9002C4DC8 /* IntervalExtremum.swift */; };
+		6389A3D2200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CF200D37A9002C4DC8 /* IntervalExtremum.swift */; };
+		6389A3D3200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3CF200D37A9002C4DC8 /* IntervalExtremum.swift */; };
+		6389A3D5200D3BD8002C4DC8 /* IntervalClipValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389A3D4200D3BD8002C4DC8 /* IntervalClipValueTests.swift */; };
 		63C1DD7C1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1DD7B1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift */; };
 		63E0655E1F995676009069EA /* DLInterval_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E065551F995676009069EA /* DLInterval_iOS.framework */; };
 		63E065631F995676009069EA /* DLIntervaliOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E065621F995676009069EA /* DLIntervaliOSTests.swift */; };
@@ -98,6 +107,9 @@
 		637FB6B51FA1033F0000503A /* IntervalUnionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalUnionTests.swift; sourceTree = "<group>"; };
 		637FB6B71FA103E50000503A /* IntervalComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalComparisonTests.swift; sourceTree = "<group>"; };
 		637FB6B91FA106ED0000503A /* UnionIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionIntervalTests.swift; sourceTree = "<group>"; };
+		6389A3CA200D370E002C4DC8 /* Double+FrameworkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Double+FrameworkExtension.swift"; path = "../../Sources/DLInterval/Double+FrameworkExtension.swift"; sourceTree = "<group>"; };
+		6389A3CF200D37A9002C4DC8 /* IntervalExtremum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntervalExtremum.swift; path = ../../Sources/DLInterval/IntervalExtremum.swift; sourceTree = "<group>"; };
+		6389A3D4200D3BD8002C4DC8 /* IntervalClipValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalClipValueTests.swift; sourceTree = "<group>"; };
 		63C1DD7B1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalBoundaryTests.swift; sourceTree = "<group>"; };
 		63E065551F995676009069EA /* DLInterval_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLInterval_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E065571F995676009069EA /* DLInterval_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterval_iOS.h; sourceTree = "<group>"; };
@@ -232,6 +244,8 @@
 				63E065B51F9956EB009069EA /* IntervalOperators.swift */,
 				63E065B11F9956EB009069EA /* IntervalType.swift */,
 				63E065B81F9956EB009069EA /* UnionInterval.swift */,
+				6389A3CA200D370E002C4DC8 /* Double+FrameworkExtension.swift */,
+				6389A3CF200D37A9002C4DC8 /* IntervalExtremum.swift */,
 			);
 			path = DLInterval;
 			sourceTree = "<group>";
@@ -241,6 +255,7 @@
 			children = (
 				63E065E51F99572C009069EA /* BoundaryTests.swift */,
 				63C1DD7B1F9D1C6F00F93B82 /* IntervalBoundaryTests.swift */,
+				6389A3D4200D3BD8002C4DC8 /* IntervalClipValueTests.swift */,
 				637FB6B71FA103E50000503A /* IntervalComparisonTests.swift */,
 				637FB6AD1FA102C10000503A /* IntervalConstructorTests.swift */,
 				637FB6AF1FA1030F0000503A /* IntervalContainsTests.swift */,
@@ -623,8 +638,10 @@
 			files = (
 				63E065DB1F9956EC009069EA /* ExpressibleByClosedRange.swift in Sources */,
 				63E065D31F9956EC009069EA /* Boundary.swift in Sources */,
+				6389A3CB200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */,
 				63E065DF1F9956EC009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
 				63E065BF1F9956EC009069EA /* Interval.swift in Sources */,
+				6389A3D0200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */,
 				63E065CF1F9956EC009069EA /* ExpressibleByRange.swift in Sources */,
 				63E065CB1F9956EC009069EA /* IntervalOperators.swift in Sources */,
 				63E065D71F9956EC009069EA /* UnionInterval.swift in Sources */,
@@ -638,6 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6389A3D5200D3BD8002C4DC8 /* IntervalClipValueTests.swift in Sources */,
 				637FB6B41FA103300000503A /* IntervalIntersectionTests.swift in Sources */,
 				63E065631F995676009069EA /* DLIntervaliOSTests.swift in Sources */,
 				63E065E61F99572C009069EA /* BoundaryTests.swift in Sources */,
@@ -656,8 +674,10 @@
 			files = (
 				63E065DC1F9956EC009069EA /* ExpressibleByClosedRange.swift in Sources */,
 				63E065D41F9956EC009069EA /* Boundary.swift in Sources */,
+				6389A3CC200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */,
 				63E065E01F9956EC009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
 				63E065C01F9956EC009069EA /* Interval.swift in Sources */,
+				6389A3D1200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */,
 				63E065D01F9956EC009069EA /* ExpressibleByRange.swift in Sources */,
 				63E065CC1F9956EC009069EA /* IntervalOperators.swift in Sources */,
 				63E065D81F9956EC009069EA /* UnionInterval.swift in Sources */,
@@ -673,8 +693,10 @@
 			files = (
 				63E065DD1F9956EC009069EA /* ExpressibleByClosedRange.swift in Sources */,
 				63E065D51F9956EC009069EA /* Boundary.swift in Sources */,
+				6389A3CD200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */,
 				63E065E11F9956EC009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
 				63E065C11F9956EC009069EA /* Interval.swift in Sources */,
+				6389A3D2200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */,
 				63E065D11F9956EC009069EA /* ExpressibleByRange.swift in Sources */,
 				63E065CD1F9956EC009069EA /* IntervalOperators.swift in Sources */,
 				63E065D91F9956EC009069EA /* UnionInterval.swift in Sources */,
@@ -698,8 +720,10 @@
 			files = (
 				63E065DE1F9956EC009069EA /* ExpressibleByClosedRange.swift in Sources */,
 				63E065D61F9956EC009069EA /* Boundary.swift in Sources */,
+				6389A3CE200D370E002C4DC8 /* Double+FrameworkExtension.swift in Sources */,
 				63E065E21F9956EC009069EA /* ExpressibleByIntervalTuple.swift in Sources */,
 				63E065C21F9956EC009069EA /* Interval.swift in Sources */,
+				6389A3D3200D37A9002C4DC8 /* IntervalExtremum.swift in Sources */,
 				63E065D21F9956EC009069EA /* ExpressibleByRange.swift in Sources */,
 				63E065CE1F9956EC009069EA /* IntervalOperators.swift in Sources */,
 				63E065DA1F9956EC009069EA /* UnionInterval.swift in Sources */,

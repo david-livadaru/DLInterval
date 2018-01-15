@@ -125,6 +125,11 @@ ExpressibleByIntervalTuple, ExpressibleByClosedRange, ExpressibleByRange, Compar
     public func formUnion(_ other: Interval) -> UnionInterval {
         return [self, other]
     }
+
+    public func clipValue(_ value: Double) -> Double {
+        let minimum = min(value, upperBoundary)
+        return max(minimum, lowerBoundary)
+    }
     
     // MARK: Comparable
     
