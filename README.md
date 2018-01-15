@@ -190,10 +190,10 @@ import DLInterval
 
 ## Contribution
 
-Module is covered by units, however, bugs always slip through.
+Module is covered by unit tests, however, bugs always slip through.
 If you find a bug in the module create an [issue](https://github.com/davidlivadaru/DLInterval/issues).
 
-If you want contribute on fixing bugs or implementing new features then create a [pull request](https://github.com/davidlivadaru/DLInterval/pulls).
+If you want to contribute on fixing bugs or implementing new features then create a [pull request](https://github.com/davidlivadaru/DLInterval/pulls).
 
 ## License
 
