@@ -20,6 +20,7 @@ This Swift module aims to provide a solution to easily create mathematical inter
 	- [Check](https://github.com/davidlivadaru/DLInterval#check)
 	- [Unions](https://github.com/davidlivadaru/DLInterval#unions)
 	- [Intersections](https://github.com/davidlivadaru/DLInterval#intersections)
+	- [Clipping values](https://github.com/davidlivadaru/DLInterval#clipping-values)
 - [Installation](https://github.com/davidlivadaru/DLInterval#installation)
 	- [Carthage](https://github.com/davidlivadaru/DLInterval#1-carthage)
 	- [CocoaPods](https://github.com/davidlivadaru/DLInterval#2-cocoapods)
@@ -66,7 +67,7 @@ let negativeInfinity: Interval = -Double.infinity.>.0 // (-inf, 0]
 let positiveInfinity: Interval = 0.><.Double.Infinity // (0, +inf)
 ```
 
-**Note** that creating an interval with a closed boundary using infinity will fail.
+**Note**: Creating an interval with a closed boundary using infinity is ill-formed.
 
 ### Check
 
@@ -101,18 +102,36 @@ let secondInterval: Interval = 0.><.1                // (0, 1)
 let union = firstInterval.formUnion(secondInterval)  // (-inf, 1)
 ```
 
-Note that `union` is a new data type called `UnionInterval`.
+**Note**: `union` is a new data type called `UnionInterval`.
 
 ### Intersections
 
-To find intersection of 2 intervals:
+Find intersection of 2 intervals:
 
 ```swift
 let firstInterval: Interval = -Double.infinity.><.1                 // (-inf, 1)
 let secondInterval: Interval = -1.><.5.0                            // (-1, 5)
 let intersection = firstInterval.intersection(with: secondInterval) // (-1, 1)
 ```
-Note that `Interval`'s intersection returns an `Interval?` and `UnionInterval`'s returns `UnionInterval`.
+**Note**: `Interval`'s intersection returns an `Interval?` and `UnionInterval`'s returns `UnionInterval`.
+
+### Clipping values
+
+Available from `v1.1`.
+
+An interval can clip a value within its boundaries:
+
+```swift
+let interval = [0..1]
+let newValue = interval.clipValue(-0.5) // 0.0
+```
+
+**Note**: Open boundaries returns the closest value to boundary:
+
+```swift
+let interval = (-1..1)
+let newValue = interval.clipValue(2.0) // 0.99999999
+```
 
 ## Installation
 
@@ -123,8 +142,8 @@ OS requirements:
 - iOS 10.0 and later.
 - watchOS 3.0 and later.
 - tvOS 10.0 and later.
-- macOS 10.11 and later.
-- Ubuntu check [official site](https://swift.org/download/#releases) which provides support for Swift 4.0.
+- macOS 10.12 and later.
+- Ubuntu - check [official site](https://swift.org/download/#releases) to find which versions support Swift 4.0.
 
 
 Choose your preferred dependency manager:
@@ -139,13 +158,10 @@ github "davidlivadaru/DLInterval"
 
 If you need the framework only for a single OS, then I propose to use `--platform [iOS|macOS|watchOS|tvOS]` specifier when your perform `carthage update`.
 
-You must to import the module using:
+You must import the module using:
 
 ```swift
-import DLInterval_iOS
-import DLInterval_macOS
-import DLInterval_watchOS
-import DLInterval_tvOS
+import DLInterval_[iOS|macOS|watchOS|tvOS] // use your OS
 ```
 
 ### 2. [CocoaPods](https://github.com/CocoaPods/CocoaPods)
@@ -153,13 +169,13 @@ import DLInterval_tvOS
 Add the dependency in your `Podfile`.
 
 ```
-pod 'DLInterval'
+pod 'DLInterval_[iOS|macOS|watchOS|tvOS]' // use the OS the dependency refers to
 ```
 
-You must to import the module using:
+You must import the module using:
 
 ```swift
-import DLInterval
+import DLInterval_[iOS|macOS|watchOS|tvOS] // use your OS
 ```
 
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
@@ -182,7 +198,7 @@ targets: [
     ]
 ```
 
-You must to import the module using:
+You must import the module using:
 
 ```swift
 import DLInterval
