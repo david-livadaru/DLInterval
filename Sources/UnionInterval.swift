@@ -9,26 +9,26 @@ import Foundation
 
 public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
     public private (set) var intervals: [Interval]
-    
+
     public var lowerBoundary: IntervalBoundary? {
         return intervals.first?.lowerBoundary
     }
-    
+
     public var upperBoundary: IntervalBoundary? {
         return intervals.last?.upperBoundary
     }
-    
+
     public var isEmpty: Bool {
         return intervals.count == 0
     }
-    
+
     public typealias Element = Interval
-    
+
     public init(arrayLiteral elements: Element...) {
         self.intervals = elements
         mergeIntervals()
     }
-    
+
     public mutating func append(_ interval: Interval) {
         append([interval])
     }
@@ -43,7 +43,7 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
         }
         mergeIntervals()
     }
-    
+
     public func contains(_ value: Double) -> Bool {
         for interval in intervals {
             if interval.contains(value) {
@@ -52,7 +52,7 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
         }
         return false
     }
-    
+
     public func intersection(_ union: UnionInterval) -> UnionInterval {
         var newUnion = UnionInterval()
         for selfInterval in intervals {
@@ -65,9 +65,9 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
         newUnion.mergeIntervals()
         return newUnion
     }
-    
+
     // MARK: Private functionality
-    
+
     private mutating func mergeIntervals() {
         guard canMergeIntervals() else { return }
         var newIntervals: [Interval] = []
@@ -89,7 +89,7 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
         intervals = newIntervals
         mergeIntervals()
     }
-    
+
     private func canMergeIntervals() -> Bool {
         guard intervals.count >= 2 else { return false }
         for index in 0..<intervals.count - 1 {
@@ -101,21 +101,21 @@ public struct UnionInterval: IntervalType, ExpressibleByArrayLiteral {
         }
         return false
     }
-    
+
     private func canMerge(_ first: Interval, with second: Interval) -> Bool {
         if first.upperBoundary > second.lowerBoundary {
             return true
         }
-        
+
         if first.upperBoundary.value == second.lowerBoundary.value &&
            (first.upperBoundary.boundary.type == .closed ||
             second.lowerBoundary.boundary.type == .closed) {
             return true
         }
-        
+
         return false
     }
-    
+
     private func merge(_ first: Interval, with second: Interval) -> Interval {
         return Interval(lowerBoundary: first.lowerBoundary, upperBoundary: second.upperBoundary)
     }
