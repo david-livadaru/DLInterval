@@ -117,7 +117,7 @@ let intersection = firstInterval.intersection(with: secondInterval) // (-1, 1)
 
 ### Clipping values
 
-Available from `v1.1`.
+Available from `v1.1.1`.
 
 An interval can clip a value within its boundaries:
 
