@@ -161,7 +161,10 @@ If you need the framework only for a single OS, then I propose to use `--platfor
 You must import the module using:
 
 ```swift
-import DLInterval_[iOS|macOS|watchOS|tvOS] // use your OS
+import DLInterval_iOS
+import DLInterval_macOS
+import DLInterval_watchOS
+import DLInterval_tvOS
 ```
 
 ### 2. [CocoaPods](https://github.com/CocoaPods/CocoaPods)
@@ -175,7 +178,10 @@ pod 'DLInterval_[iOS|macOS|watchOS|tvOS]' // use the OS the dependency refers to
 You must import the module using:
 
 ```swift
-import DLInterval_[iOS|macOS|watchOS|tvOS] // use your OS
+import DLInterval_iOS
+import DLInterval_macOS
+import DLInterval_watchOS
+import DLInterval_tvOS
 ```
 
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
