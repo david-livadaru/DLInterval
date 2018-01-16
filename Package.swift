@@ -14,7 +14,6 @@ let package = Package(
     targets: [
         .target(
             name: "DLInterval",
-            dependencies: [],
-            path: "Sources")
+            dependencies: [])
     ]
 )
