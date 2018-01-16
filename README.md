@@ -44,8 +44,8 @@ let openOpen = Interval((1..2))        // (1, 2)
 For convenience, range operators may be used:
 
 ```swift
-let closedClosed: Interval = 1...2    // [1, 2]
-let closedOpen: Interval = 1..<2      // [1, 2)
+let closedClosed = Interval(1...2)    // [1, 2]
+let closedOpen = Interval(1..<2)      // [1, 2)
 ```
 
 For half open intervals there are some new operators: 

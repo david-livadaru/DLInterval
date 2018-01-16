@@ -29,6 +29,12 @@ class IntervalClipValueTests: XCTestCase {
         XCTAssert(value < interval.upperBoundary.value)
     }
 
+    func testClosedOpenInterval_ExcendMaximumValue() {
+        let interval = Interval(1.0..<2.0)
+        let value = interval.clipValue(3.0)
+        XCTAssert(value < interval.upperBoundary.value)
+    }
+
     func testClosedClosedInterval_ExcendMinimumValue() {
         let interval: Interval = [1..2]
         let value = interval.clipValue(-1.0)

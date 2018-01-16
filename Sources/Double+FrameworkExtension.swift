@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
     var step: Double {
         return pow(10, -15)
     }
