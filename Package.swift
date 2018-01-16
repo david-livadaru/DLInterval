@@ -8,16 +8,13 @@ let package = Package(
     products: [
         .library(
             name: "DLInterval",
-            targets: ["DLInterval"]),
+            targets: ["DLInterval"])
     ],
     dependencies: [],
     targets: [
         .target(
             name: "DLInterval",
-            dependencies: []),
-        .testTarget(
-            name: "DLIntervalTests",
-            dependencies: ["DLInterval"],
-            path: "Tests/DLInterval"),
+            dependencies: [],
+            path: "Sources")
     ]
 )
