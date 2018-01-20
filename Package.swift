@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .target(
             name: "DLInterval",
-            dependencies: [])
+            dependencies: []),
         .testTarget(
             name: "DLIntervalTests",
             dependencies: ["DLInterval"])
