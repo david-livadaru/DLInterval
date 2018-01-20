@@ -3,7 +3,6 @@
 //  DLInterval_iOSTests
 //
 //  Created by David Livadaru on 10/22/17.
-//  Copyright © 2017 David Livadaru. All rights reserved.
 //
 
 import XCTest
