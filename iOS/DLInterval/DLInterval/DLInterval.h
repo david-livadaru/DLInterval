@@ -3,7 +3,6 @@
 //  DLInterval
 //
 //  Created by David Livadaru on 1/20/18.
-//  Copyright © 2018 David Livadaru. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
