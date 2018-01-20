@@ -16,6 +16,7 @@ This Swift module aims to provide a solution to easily create mathematical inter
 ## Table of contents
 
 - [Usage](https://github.com/davidlivadaru/DLInterval#usage)
+	- [Importing the module](https://github.com/davidlivadaru/DLInterval#importing-the-module)
 	- [Creation](https://github.com/davidlivadaru/DLInterval#creation)
 	- [Check](https://github.com/davidlivadaru/DLInterval#check)
 	- [Unions](https://github.com/davidlivadaru/DLInterval#unions)
@@ -29,6 +30,14 @@ This Swift module aims to provide a solution to easily create mathematical inter
 - [License](https://github.com/davidlivadaru/DLInterval#license)
 
 ## Usage
+
+### Importing the module
+
+You can import this module using:
+
+```swift
+import DLInterval
+```
 
 ### Creation
 
@@ -122,14 +131,14 @@ Available from `v1.1.1`.
 An interval can clip a value within its boundaries:
 
 ```swift
-let interval = [0..1]
+let interval = Interval([0..1])
 let newValue = interval.clipValue(-0.5) // 0.0
 ```
 
 **Note**: Open boundaries returns the closest value to boundary:
 
 ```swift
-let interval = (-1..1)
+let interval = Interval((-1..1))
 let newValue = interval.clipValue(2.0) // 0.99999999
 ```
 
@@ -158,30 +167,12 @@ github "davidlivadaru/DLInterval"
 
 If you need the framework only for a single OS, then I propose to use `--platform [iOS|macOS|watchOS|tvOS]` specifier when your perform `carthage update`.
 
-You must import the module using:
-
-```swift
-import DLInterval_iOS
-import DLInterval_macOS
-import DLInterval_watchOS
-import DLInterval_tvOS
-```
-
 ### 2. [CocoaPods](https://github.com/CocoaPods/CocoaPods)
 
 Add the dependency in your `Podfile`.
 
 ```
-pod 'DLInterval_[iOS|macOS|watchOS|tvOS]' // use the OS the dependency refers to
-```
-
-You must import the module using:
-
-```swift
-import DLInterval_iOS
-import DLInterval_macOS
-import DLInterval_watchOS
-import DLInterval_tvOS
+pod 'DLInterval'
 ```
 
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
@@ -202,12 +193,6 @@ targets: [
             name: "YourTargetName",
             dependencies: ["DLInterval"])),
     ]
-```
-
-You must import the module using:
-
-```swift
-import DLInterval
 ```
 
 ## Contribution
