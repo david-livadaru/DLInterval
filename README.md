@@ -177,7 +177,7 @@ pod 'DLInterval'
 
 ### 3. [Swift Package Manager](https://swift.org/package-manager/)
 
-Add the the following dependecy in your `Package.swift`:
+Add the the following dependecy in your [`Package.swift`]((https://swift.org/package-manager/#example-usage)):
 
 ```
 dependencies: [
