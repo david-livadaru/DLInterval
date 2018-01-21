@@ -7,18 +7,33 @@
 
 import Foundation
 
+/// The type of boundary.
+///
+/// - closed: closed type boundary: **[**, **]**.
+/// - open: open type boundary: **(**, **)**.
 public enum BoundaryType {
     case closed, open
 }
 
 public struct Boundary: Comparable {
+    /// The side which boundary is placed.
+    ///
+    /// - left: **left** side boundary.
+    /// - right: **right** side boundary.
     public enum Side {
         case left, right
     }
 
+    /// The type of boundary,
     public let type: BoundaryType
+    /// The side of boundary.
     public let side: Side
 
+    /// Initialize a boundary with type and side.
+    ///
+    /// - Parameters:
+    ///   - type: The type of boundary,
+    ///   - side: The side of boundary.
     public init(type: BoundaryType, side: Side) {
         self.type = type
         self.side = side

@@ -97,7 +97,7 @@ class UnionIntervalTests: XCTestCase {
     func testIntersection() {
         let firstUnion: UnionInterval = [-Double.infinity.><.3]
         let secondUnion: UnionInterval = [2.><.Double.infinity]
-        let intersection = firstUnion.intersection(secondUnion)
+        let intersection = firstUnion.intersection(with: secondUnion)
         XCTAssertTrue(intersection.intervals.count == 1)
         XCTAssertTrue(intersection.lowerBoundary?.value == 2)
         XCTAssertTrue(intersection.upperBoundary?.value == 3)

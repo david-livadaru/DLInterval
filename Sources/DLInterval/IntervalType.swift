@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// A type to which Interval and UnioInterval conforms.
 public protocol IntervalType {
     func contains(_ element: Double) -> Bool
 }

@@ -7,31 +7,39 @@
 
 import Foundation
 
+/// A type which holds a boundary and a value.
 public struct IntervalBoundary: Comparable {
+    /// The value hold by IntervalBoundary.
     public let value: Double
+    /// The boundary hold by IntervalBoundary.
     public let boundary: Boundary
 
+    /// Create an IntervalBoundary with a value and boundary.
+    ///
+    /// - Parameters:
+    ///   - value: The value.
+    ///   - boundary: The boundary.
     public init(value: Double, boundary: Boundary) {
         self.value = value
         self.boundary = boundary
     }
 
-    // MARK: Public interface
+    // MARK: Internal interface
 
-    public func contains(_ element: Double) -> Bool {
-        if abs(element) == Double.infinity && abs(value) == Double.infinity {
+    func contains(_ value: Double) -> Bool {
+        if abs(value) == Double.infinity && abs(self.value) == Double.infinity {
             return true
         }
 
         switch (boundary.side, boundary.type) {
         case (.left, .open):
-            return element > value
+            return value > self.value
         case (.left, .closed):
-            return element >= value
+            return value >= self.value
         case (.right, .open):
-            return element < value
+            return value < self.value
         case (.right, .closed):
-            return element <= value
+            return value <= self.value
         }
     }
 
