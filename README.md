@@ -148,11 +148,11 @@ Module requires Swift 4.0.
 
 OS requirements:
 
-- iOS 10.0 and later.
-- watchOS 3.0 and later.
-- tvOS 10.0 and later.
-- macOS 10.12 and later.
-- Ubuntu - check [official site](https://swift.org/download/#releases) to find which versions support Swift 4.0.
+- **iOS** 10.0 and later.
+- **watchOS** 3.0 and later.
+- **tvOS** 10.0 and later.
+- **macOS** 10.12 and later.
+- **Ubuntu** - check [official site](https://swift.org/download/#releases) to find which versions support Swift 4.0.
 
 
 Choose your preferred dependency manager:
